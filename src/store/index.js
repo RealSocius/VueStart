@@ -25,6 +25,8 @@ export default new Vuex.Store({
     },
   },
   getters: {
-    get: (state) => state.data,
+    get: (state) => (variable) => {
+      return state[variable];
+    },
   },
 });
