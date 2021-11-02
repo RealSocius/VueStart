@@ -6,6 +6,9 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+Vue.component("side", require("./components/Side.vue").default);
+Vue.component("bread", require("./components/Breadcrumbs.vue").default);
+
 new Vue({
   router,
   store,
