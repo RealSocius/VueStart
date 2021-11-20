@@ -4,23 +4,26 @@ import axios from "axios";
 
 Vue.use(Vuex);
 
-// const url = "https://web-tower.com/api/";
-const url = "http://localhost:8000/api/";
-const token = "?api_token=Backend";
+const url = "https://lottohotel.oot.rentals/api/data/";
+const api_token = "Backend";
 
 export default new Vuex.Store({
   state: {
-    data: [],
+    status: {},
+    tickets: [],
+    winners: [],
+    rules: {},
   },
   mutations: {
     set(state, payload) {
-      state.data = payload;
+      state[payload.state] = payload.data;
     },
   },
   actions: {
-    async set(state) {
-      await axios.get(url + "data" + token).then((res) => {
-        state.commit("set", res.data);
+    async set(state, payload) {
+      await axios.get(url + payload + "?api_token=" + api_token).then((res) => {
+        res.state = payload;
+        state.commit("set", res);
       });
     },
   },
