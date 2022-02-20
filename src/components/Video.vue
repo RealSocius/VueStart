@@ -65,8 +65,8 @@ export default {
 <style lang="scss">
 .video {
   aspect-ratio: 16/9;
-  background-size: cover;
-  background-position: center;
+  background-size: cover !important;
+  background-position: center !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

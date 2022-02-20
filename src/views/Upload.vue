@@ -11,7 +11,7 @@
           <h2>1. Einreichen</h2>
           <p>
             Lade dein Video hoch und schicke uns anschließen das Video, ein
-            Thumbnail und den Videotitel an die 1822-12345678.
+            Thumbnail und den Videotitel an die 1822 - 70 827 872.
           </p>
         </div>
         <div class="step">
@@ -43,7 +43,7 @@
           <h2>5. Spenden</h2>
           <p>
             Da wir weder an Werbung kein Geld verdienen freuen wir uns über
-            Spenden an die VBAN 123456.
+            Spenden an die VBAN 956271.
           </p>
         </div>
         <div class="step">
