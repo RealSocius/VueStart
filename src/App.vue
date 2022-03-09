@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Navbar ref="navbar"></Navbar>
-    <router-view :key="$route.fullPath" id="main" />
+    <Navbar></Navbar>
+    <router-view />
     <Footer></Footer>
   </div>
 </template>
@@ -18,8 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
-
 html {
   scroll-behavior: smooth;
 }
@@ -27,17 +25,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #181a1b;
-  color: #fff;
-  font-family: Poppins;
   * {
     margin: 0;
     box-sizing: border-box;
-    color: #fff;
   }
-}
-
-#newest {
-  padding: 0 7.29vw;
 }
 </style>
